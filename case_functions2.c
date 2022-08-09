@@ -103,7 +103,7 @@ int print_rev(va_list arg)
 
 	while (s[i])
 	{
-		i+
+		i++;
 	}
 
 	for (j = i - 1; j >= 0; j--)
