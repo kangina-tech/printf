@@ -61,7 +61,6 @@ int print_unsign(va_list arg, int base)
 	s = convert_to("0123456789ABCDEF", i, base);
 	_puts(s);
 	cont = _strlen(s);
-
 	return (cont);
 }
 
@@ -76,7 +75,6 @@ int print_string(va_list arg)
 {
 	char *s;
 	int cont = 0;
-
 	s = va_arg(arg, char *);
 	if (!s)
 	{

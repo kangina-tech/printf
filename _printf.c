@@ -62,8 +62,25 @@ int _printf(const char *format, ...)
 
 void print_buffer(char buffer[], int *buff_ind)
 {
+<<<<<<< HEAD
 	if (*buff_ind > 0)
 		write(1, &buffer[0], *buff_ind);
 
 	*buff_ind = 0;
+=======
+	buffer_t *output;
+	va_list args;
+	int ret;
+
+	if (format == NULL)
+		return (-1);
+	output = init_buffer();
+	if (output == NULL)
+		return (-1);
+
+	va_start(args, format);
+
+	ret = run_printf(format, args, output);
+	return (ret);
+>>>>>>> 5b1b8046bafaeec44c26351ef0d7008bd9da35b2
 }

@@ -31,7 +31,6 @@ int function_manager(char c, va_list arg)
 int _switch(char c, va_list arg)
 {
 	int cont = 0;
-
 	switch (c)
 	{
 		case 'b':
