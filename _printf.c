@@ -82,5 +82,4 @@ void print_buffer(char buffer[], int *buff_ind)
 
 	ret = run_printf(format, args, output);
 	return (ret);
->>>>>>> 5b1b8046bafaeec44c26351ef0d7008bd9da35b2
 }
